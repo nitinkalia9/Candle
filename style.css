@@ -19,9 +19,12 @@ header {
   align-items: center;
   background-color: var(--primary-color);
   padding: 20px;
-  position: fixed;
+  position: flex;
   top: 0;
   width: 100%;
+}
+#header-img {
+    cursor: pointer;
 }
 
 .nav-list {
