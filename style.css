@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #C49E75; /* Warm candle wax tone */
+  --accent-color: #FFF2E8;  /* Soft glow */
+  --text-color: #4A402A;    /* Dark brown */
+  --font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--accent-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none;        /* remove bullets */
+  display: flex;           /* put items in a row */
+  justify-content: center; /* center them horizontally */
+  gap: 20px;               /* space between items */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;   /* remove underline */
+  color: #333;             /* text color */
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #b5651d;          /* hover color (like candle theme brown) */
+}
+
+
+#hero {
+  text-align: center;
+  padding: 120px 20px 60px;
+}
+#hero h1 {
+  font-size: 2.5rem;
+}
+#hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+#form {
+  margin-top: 20px;
+}
+#email {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid var(--text-color);
+}
+#submit {
+  padding: 10px 20px;
+  background-color: var(--text-color);
+  color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: #3a3220;
+}
+
+#features {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+}
+.feature h2 {
+  font-size: 1.5rem;
+}
+.feature p {
+  font-size: 1rem;
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+}
+.product {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.product .price {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+.product button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.product button:hover {
+  background-color: #a97d53;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+footer a {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+}
+footer p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
